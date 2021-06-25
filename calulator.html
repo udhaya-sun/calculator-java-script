@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id='cont'>
+        <div id='calc'>
+            <div id='textbox'>
+               <div id='history'> <p id='his'>History</p></div>
+               <div id='output'> <p id='out'></p> </div>
+            </div>
+            <div id='keyboard'>
+                <button class="butt" value=' ' id='clear' onclick="clearer()" style="background-color: rgb(191, 255, 234);">AC</button>
+                <button class="butt" value='1' id='1' onclick="backspace()" style="background-color: rgb(185, 255, 128);">C</button>
+                <button class="butt" value='/' id='/' onclick="handler('/')" style="background-color: rgb(255, 156, 98);">/</button>
+                <button class="butt" value='%' id='%' onclick="handler('%')" style="background-color: rgb(246, 142, 255);">%</button><br><br>
+                <button class="butt" value='1' id='1' onclick="handler('1')">1</button>
+                <button class="butt" value='2' id='2' onclick="handler('2')">2</button>
+                <button class="butt" value='3' id='3' onclick="handler('3')">3</button>
+                <button class="butt" value='+' id='+' onclick="handler('+')" style="background-color: rgb(179, 147, 255);">+</button><br><br>
+                <button class="butt" value='4' id='4' onclick="handler('4')">4</button>
+                <button class="butt" value='5' id='5' onclick="handler('5')">5</button>
+                <button class="butt" value='6' id='6' onclick="handler('6')">6</button>
+                <button class="butt" value='-' id='-' onclick="handler('-')" style="background-color: rgb(144, 255, 181);">-</button><br><br>
+                <button class="butt" value='7' id='7' onclick="handler('7')">7</button>
+                <button class="butt" value='8' id='8' onclick="handler('8')">8</button>
+                <button class="butt" value='9' id='9' onclick="handler('9')">9</button>
+                <button class="butt" value='*' id='x' onclick="handler('x')" style="background-color: rgb(255, 117, 117);">x</button><br><br>
+                <button class="butt" value='.' id='.' onclick="handler('.')">.</button>
+                <button class="butt" value='0' id='0' onclick="handler('0')">0</button>
+                <button class="butt" value='This Calculator is created by Udhaya SUN' id='sun' onclick="handler('sun')">SUN</button>
+                <button class="butt" value='=' id='=' onclick="calcu()" style="background-color: rgb(66, 79, 255);">=</button>
+
+            </div>
+        </div>
+    </div>
+<script src="practice.js"></script>
+</body>
+</html>
